@@ -1,0 +1,45 @@
+/* app styles */
+header {
+  text-align: center;
+  background: #444;
+  color: #f1f1f1;
+  padding: 20px;
+}
+
+.toptenheader {
+  font-size: 40px
+}
+
+.toptenlifeexperiences {
+  text-align: center;
+  padding-bottom: 10px;
+  margin-left: 400px;
+  height: 200px;
+  width: 400px;
+  background: black;
+  color: white;
+}
+
+.lifeexperience {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+  .joblist li {
+  color: rgb(102, 55, 100);
+}
+
+  .joblist .usnavy {
+  color: red;
+}
+
+body {
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
