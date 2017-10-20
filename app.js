@@ -13,10 +13,35 @@ if (firstLetterInName === firstLetterInName.toLowerCase()) {
 console.log(firstLetterInName);
 console.log(userName);
 
-/*this will display there name*/
+var promptQuestions = ['What is my favorite sport?', 'How many cats do I have?', 'Are you addicted to La Croix like me?', 'How old do you think I am?'];
+
+var promptAnswers = [];
+
+var correctAnswers = ['soccer', '2', 'y' || 'yes', '35'];
+
+var incorrectAnswers = [!'soccer', !'2', 'n' || 'no', !'35'];
+
+var ifCorrect = ['you got it!  Good guess!.', 'Yes, ' + userName + ' and they are both awesome!','you got it!  Good guess!.', 'DING DING DING!!'];
+
+var ifIncorrect = ['Good guess, but my favorite sport is actually Soccer', 'Whoops, you should have said 2.' + 'Silly ', 'You are missing out.', 'You think I am a geezer, not cool'];
+
+var askQuestions = funtion() {
+  for (var i = 0; i < promptQuestions.length; i++) {
+    promptAnswers[i] = prompt(promptQuestions[i]);
+    if (promptAnswers[i] === correctAnswers[i].toLowerCase) {
+      alert(ifCorrect[i]);
+    } else {
+      alert(ifIncorrect[i]);
+    }
+    }
+}
+askQuestions();
+
+/*
+/*this will display there name
 alert('Hello ' + userName + '!!  Thanks for learning about me!');
 
-/*I will ask for my favorite sport and return them a response to their answer */
+/*I will ask for my favorite sport and return them a response to their answer
 var favoriteSport = prompt('What is my favorite sport?');
 console.log('Gregs favorite sport is:', favoriteSport);
 
@@ -60,3 +85,4 @@ if (howOldAmI <= 34){
 } else {
   alert('You think I am a geezer, not cool ' + userName);
 }
+/*
